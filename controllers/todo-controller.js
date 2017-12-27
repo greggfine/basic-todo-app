@@ -12,7 +12,8 @@ module.exports = function(app) {
 	});
 
 	app.post('/todo', function(req, res) {
-		data.push(req.body.todoItem);
+		var item = req.body.todoItem;
+		item === 'Clear'? data.push(item.toLowerCase()): data.push(item);
 		res.redirect('/todo');
 	});
 
