@@ -1,0 +1,48 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial;
+	font-size: 24px;
+}
+
+.container {
+	max-width: 900px;
+	height: 100vh;
+	margin: auto;
+}
+
+h1 {
+	text-align: center;
+	text-transform: uppercase;
+}
+
+form {
+	display: flex;
+	flex-direction: row;
+}
+
+form input {
+	padding: 10px;
+}
+
+form input, button {
+	width: 500px;
+}
+
+p {
+	font-style: italic;
+	font-size: 0.5rem;
+	margin-bottom: 100px;
+
+}
+
+ul li {
+	padding: 10px;
+	width: 200px;
+}
+
+ul li:hover {
+	text-decoration: line-through;
+	cursor: pointer;
+}

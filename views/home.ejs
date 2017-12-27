@@ -1,0 +1,19 @@
+<% include partials/header %>
+
+	<h1>Todo App</h1>
+
+	<form action="/todo" method="POST">
+		<input type="text" placeholder="Add Todo" name="todoItem">
+		<button type="submit">Add item</button>
+	</form>
+
+	<p>Note: Enter "clear" to delete todos</p>
+	
+	<ul>
+		<% todoList.forEach(function(todo) {%>
+				<li> <%= todo %> </li>
+		<%  });								%>
+	</ul>
+
+
+<% include partials/footer %>
